@@ -4,15 +4,15 @@ import PropTypes from "prop-types";
 
 import { AiOutlineClose } from "react-icons/ai";
 
-// MyModal.propTypes = {
-//   modalProps: PropTypes.shape({
-//     title: PropTypes.string,
-//     message: PropTypes.string,
-//     actionA: PropTypes.object,
-//     actionB: PropTypes.object,
-//     isOpen: PropTypes.func,
-//   }),
-// };
+MyModal.propTypes = {
+  modalProps: PropTypes.shape({
+    title: PropTypes.string,
+    message: PropTypes.string,
+    actionA: PropTypes.object,
+    actionB: PropTypes.object,
+    isOpen: PropTypes.func,
+  }),
+};
 
 /**
  * @description Modal component
