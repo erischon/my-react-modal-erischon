@@ -58,7 +58,7 @@ Tous les paramètres sont obligatoires. Les types sont :
 
 ## Versions
 
-### 0.0.1-a.1 : Version Initiale
+### 0.0.1 : Version Initiale
 
 ### Features
 
