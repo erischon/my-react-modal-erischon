@@ -1,22 +1,60 @@
-# README
-
 # My Modal
+
+Un component React pour afficher une modale dynamique.
 
 ## Installation
 
-## Documentation
+```powershell
+yarn add my-react-modal-erischon
 
-### Paramètres du component
+#or
 
-title
+npm i my-react-modal-erischon@latest
+```
 
-message
+## Usage
 
-actionA
+```jsx
+import { useState } from "react";
 
-actionB
+import MyModal from "my-react-modal-erischon";
 
-isOpen
+function ExampleComponent() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const modalProps = {
+    title: "Modal Title",
+    message: "A message",
+    actionA: {
+      title: "Action A",
+      action: () => {},
+    },
+    actionB: {
+      title: "Action B",
+      action: () => {},
+    },
+    isOpen: setIsModalOpen,
+  };
+
+  return (
+    <>
+      <h1>Modal Example</h1>
+
+      {isModalOpen ? <MyModal modalProps={modalProps} /> : null}
+    </>
+  );
+}
+
+export default ExampleComponent;
+```
+
+Tous les paramètres sont obligatoires. Les types sont :
+
+- title : un string
+- message : un string
+- actionA : un object
+- actionB : un objectt
+- isOpen : un hook useState
 
 ## Versions
 
