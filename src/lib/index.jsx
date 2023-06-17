@@ -18,7 +18,7 @@ MyModal.propTypes = {
  * @description Modal component
  */
 function MyModal({ modalProps }) {
-  const { title, message, actionA, actionB, isOpen } = modalProps;
+  const { title, message, actionA, actionB, isOpen, ui } = modalProps;
 
   const onClose = () => {
     isOpen(false);
@@ -26,8 +26,12 @@ function MyModal({ modalProps }) {
 
   return (
     <>
-      <div className="z-50 transition duration-300 bg-zinc-600 bg-opacity-80 flex justify-center items-center overflow-x-hidden overflow-y-auto fixed inset-0">
-        <div className="bg-zinc-100 w-11/12 md:max-w-md mx-auto rounded-md shadow-lg z-50 overflow-y-auto">
+      <div
+        className={`z-50 transition duration-300 ${ui.modalBackgroundContainer} ${ui.modalBackgroundContainerOpacity} flex justify-center items-center overflow-x-hidden overflow-y-auto fixed inset-0`}
+      >
+        <div
+          className={`${ui.modalBackground} w-11/12 md:max-w-md mx-auto rounded-md shadow-lg z-50 overflow-y-auto`}
+        >
           <div className="flex justify-between items-start p-4 gap-4">
             <h2 className="text-xl font-bold">{title}</h2>
 
