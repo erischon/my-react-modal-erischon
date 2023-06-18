@@ -21,6 +21,11 @@ function ExampleComponent() {
       modalBackgroundContainer: "bg-zinc-600",
       modalBackgroundContainerOpacity: "bg-opacity-100",
       modalBackground: "bg-zinc-100",
+      modalColor: "text-black",
+      buttonABackground: "bg-orange-600",
+      buttonAColor: "text-white",
+      buttonBBackground: "bg-orange-600",
+      buttonBColor: "text-white",
     },
   };
 
