@@ -63,23 +63,32 @@ Tous les paramètres sont obligatoires. Les types sont :
 - title : un string
 - message : un string
 - actionA : un object
-- actionB : un objectt
+- actionB : un object
 - isOpen : un hook useState
 - ui : un object
 
 ## Versions
 
+### 0.0.4 :
+
+- Ajout de valeurs par défaut pour les paramètres
+
 ### 0.0.3 : Ajout d’une UI dynamique
 
 - On peut paramétrer :
-    - le background du container
-    - l’opacité du background du container
-    - le background de la modale
-    - la couleur du texte de la modale
-    - le background du bouton A
-    - la couleur du texte du bouton A
-    - le background du bouton B
-    - la couleur du texte du bouton B
+    - le background du container (modalBackgroundContainer)
+    - l’opacité du background du container (modalBackgroundContainerOpacity)
+    - le background de la modale (modalBackground)
+    - la couleur du texte de la modale (modalColor)
+    - le background du bouton A (buttonABackground)
+    - la couleur du texte du bouton A (buttonAColor)
+    - le background du bouton B (buttonBBackground)
+    - la couleur du texte du bouton B (buttonBColor)
+    
+    en utilisant des class Tailwindcss
+    
+    - [Background Color](https://tailwindcss.com/docs/background-color)
+    - [Color](https://tailwindcss.com/docs/text-color)
 
 ### 0.0.2 : Minor
 
