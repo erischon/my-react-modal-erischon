@@ -34,7 +34,38 @@ MyModal.propTypes = {
  * @description Modal component
  */
 function MyModal({ modalProps }) {
-  const { title, message, actionA, actionB, isOpen, ui } = modalProps;
+  const defaultModalProps = {
+    title: "Modal Title",
+    message: "Modal message",
+    actionA: {
+      title: "Action A Title",
+      action: () => {},
+    },
+    actionB: {
+      title: "Action B Title",
+      action: () => {},
+    },
+    isOpen: () => {},
+    ui: {
+      modalBackgroundContainer: "bg-zinc-200",
+      modalBackgroundContainerOpacity: "bg-opacity-90",
+      modalBackground: "bg-zinc-100",
+      modalColor: "text-black",
+      buttonABackground: "bg-red-600",
+      buttonAColor: "text-white",
+      buttonBBackground: "bg-red-600",
+      buttonBColor: "text-white",
+    },
+  };
+
+  const {
+    title = defaultModalProps.title,
+    message = defaultModalProps.message,
+    actionA = defaultModalProps.actionA,
+    actionB = defaultModalProps.actionB,
+    isOpen = defaultModalProps.isOpen,
+    ui = defaultModalProps.ui,
+  } = modalProps;
 
   const onClose = () => {
     isOpen(false);
