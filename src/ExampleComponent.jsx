@@ -9,7 +9,7 @@ function ExampleComponent() {
     title: "Modal Title",
     message: "A message",
     actionA: {
-      title: "Action",
+      title: "Action A",
       action: () => {},
     },
     actionB: {
