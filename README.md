@@ -1,6 +1,6 @@
 # My Modal
 
-Un component React pour afficher une modale dynamique.
+Un component React qui permet d’afficher une modale dynamique.
 
 ## Installation
 
@@ -75,7 +75,7 @@ Tous les paramètres sont obligatoires. Les types sont :
 
 ### 0.0.3 : Ajout d’une UI dynamique
 
-- On peut paramétrer :
+- On peut maintenant paramétrer :
     - le background du container (modalBackgroundContainer)
     - l’opacité du background du container (modalBackgroundContainerOpacity)
     - le background de la modale (modalBackground)
@@ -98,8 +98,8 @@ Tous les paramètres sont obligatoires. Les types sont :
 
 ### Features
 
-- Affichage d’une modale
-- informations dynamiques
+- Affichage d’une modale à la demande
+- Informations dynamiques de la modale
     - Le titre de la modale
     - Un message
     - une Action A
