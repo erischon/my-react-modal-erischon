@@ -1,10 +1,10 @@
 {
   "name": "my-react-modal-erischon",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A React modal component",
   "license": "MIT",
   "author": "Eri Schön",
-  "keywords": [],
+  "keywords": ["react", "modal", "component"],
   "files": [
     "dist",
     "README.md"
@@ -68,7 +68,6 @@
     "vitest": "^0.32.0"
   },
   "dependencies": {
-    "my-react-modal-erischon": "^0.0.1",
     "react-icons": "^4.9.0"
   }
 }
