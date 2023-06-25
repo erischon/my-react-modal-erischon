@@ -4,8 +4,6 @@ import PropTypes from "prop-types";
 
 import { AiOutlineClose } from "react-icons/ai";
 
-import "./index.css";
-
 MyModal.propTypes = {
   modalProps: PropTypes.shape({
     title: PropTypes.string,
@@ -87,7 +85,7 @@ function MyModal({ modalProps }) {
   return (
     <>
       <div
-        className={`fixed w-full h-full z-50 transition duration-300 ${modalBackgroundContainer} ${modalBackgroundContainerOpacity} flex justify-center items-center overflow-x-hidden overflow-y-auto fixed inset-0`}
+        className={`fixed w-full h-full top-0 left-0 z-50 transition duration-300 ${modalBackgroundContainer} ${modalBackgroundContainerOpacity} flex justify-center items-center overflow-x-hidden overflow-y-auto`}
       >
         <div
           className={`${modalBackground} ${modalColor} w-11/12 md:max-w-md mx-auto rounded-md shadow-lg z-50 overflow-y-auto`}

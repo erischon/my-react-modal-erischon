@@ -26,7 +26,9 @@
     "build": "vite build",
     "test": "vitest run",
     "watch": "vitest",
-    "coverage": "vitest run --coverage"
+    "coverage": "vitest run --coverage",
+    "link-local": "yarn link && cd node_modules/react && yarn link && cd ../react-dom && yarn link",
+    "unlink-local": "yarn unlink && cd node_modules/react && yarn unlink && cd ../react-dom && yarn unlink"
   },
   "browserslist": {
     "production": [
