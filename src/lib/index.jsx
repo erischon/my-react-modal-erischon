@@ -4,6 +4,8 @@ import PropTypes from "prop-types";
 
 import { AiOutlineClose } from "react-icons/ai";
 
+import "./index.css";
+
 MyModal.propTypes = {
   modalProps: PropTypes.shape({
     title: PropTypes.string,
@@ -47,7 +49,7 @@ function MyModal({ modalProps }) {
     },
     isOpen: () => {},
     ui: {
-      modalBackgroundContainer: "bg-zinc-200",
+      modalBackgroundContainer: "bg-zinc-700",
       modalBackgroundContainerOpacity: "bg-opacity-90",
       modalBackground: "bg-zinc-100",
       modalColor: "text-black",
@@ -64,8 +66,19 @@ function MyModal({ modalProps }) {
     actionA = defaultModalProps.actionA,
     actionB = defaultModalProps.actionB,
     isOpen = defaultModalProps.isOpen,
-    ui = defaultModalProps.ui,
   } = modalProps;
+
+  const {
+    modalBackgroundContainer = defaultModalProps.ui.modalBackgroundContainer,
+    modalBackgroundContainerOpacity = defaultModalProps.ui
+      .modalBackgroundContainerOpacity,
+    modalBackground = defaultModalProps.ui.modalBackground,
+    modalColor = defaultModalProps.ui.modalColor,
+    buttonABackground = defaultModalProps.ui.buttonABackground,
+    buttonAColor = defaultModalProps.ui.buttonAColor,
+    buttonBBackground = defaultModalProps.ui.buttonBBackground,
+    buttonBColor = defaultModalProps.ui.buttonBColor,
+  } = modalProps?.ui;
 
   const onClose = () => {
     isOpen(false);
@@ -74,10 +87,10 @@ function MyModal({ modalProps }) {
   return (
     <>
       <div
-        className={`z-50 transition duration-300 ${ui.modalBackgroundContainer} ${ui.modalBackgroundContainerOpacity} flex justify-center items-center overflow-x-hidden overflow-y-auto fixed inset-0`}
+        className={`fixed w-full h-full z-50 transition duration-300 ${modalBackgroundContainer} ${modalBackgroundContainerOpacity} flex justify-center items-center overflow-x-hidden overflow-y-auto fixed inset-0`}
       >
         <div
-          className={`${ui.modalBackground} ${ui.modalColor} w-11/12 md:max-w-md mx-auto rounded-md shadow-lg z-50 overflow-y-auto`}
+          className={`${modalBackground} ${modalColor} w-11/12 md:max-w-md mx-auto rounded-md shadow-lg z-50 overflow-y-auto`}
         >
           <div className="flex justify-between items-start p-4 gap-4">
             <h2 className="text-xl font-bold">{title}</h2>
@@ -91,14 +104,14 @@ function MyModal({ modalProps }) {
 
           <div className="flex gap-2 items-center w-100 p-4">
             <button
-              className={`${ui.buttonABackground} rounded-md px-3 py-1 ${ui.buttonAColor} font-semibold`}
+              className={`${buttonABackground} rounded-md px-3 py-1 ${buttonAColor} font-semibold`}
               onClick={actionA?.action}
             >
               {actionA?.title}
             </button>
 
             <button
-              className={`${ui.buttonBBackground} rounded-md px-3 py-1 ${ui.buttonBColor} font-semibold`}
+              className={`${buttonBBackground} rounded-md px-3 py-1 ${buttonBColor} font-semibold`}
               onClick={actionB?.action}
             >
               {actionB?.title}

@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 import MyModal from "./lib";
+// import MyModal from "my-react-modal-erischon";
 
 function ExampleComponent() {
   const [isModalOpen, setIsModalOpen] = useState(true);
@@ -31,9 +32,11 @@ function ExampleComponent() {
 
   return (
     <>
-      <h1>Modal Example</h1>
+      <div className="">
+        <h1>Modal Example</h1>
 
-      {isModalOpen ? <MyModal modalProps={modalProps} /> : null}
+        {isModalOpen ? <MyModal modalProps={modalProps} /> : null}
+      </div>
     </>
   );
 }
