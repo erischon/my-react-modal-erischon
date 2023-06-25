@@ -69,6 +69,10 @@ Tous les paramètres sont obligatoires. Les types sont :
 
 ## Versions
 
+### 0.0.5 :
+
+- Refactoring des valeurs par défaut
+
 ### 0.0.4 :
 
 - Ajout de valeurs par défaut pour les paramètres
