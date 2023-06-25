@@ -76,7 +76,7 @@ function MyModal({ modalProps }) {
     buttonAColor = defaultModalProps.ui.buttonAColor,
     buttonBBackground = defaultModalProps.ui.buttonBBackground,
     buttonBColor = defaultModalProps.ui.buttonBColor,
-  } = modalProps?.ui;
+  } = modalProps.ui;
 
   const onClose = () => {
     isOpen(false);
@@ -120,4 +120,5 @@ function MyModal({ modalProps }) {
     </>
   );
 }
+
 export default MyModal;
