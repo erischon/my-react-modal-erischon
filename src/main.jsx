@@ -3,8 +3,6 @@ import ReactDOM from "react-dom/client";
 
 import ExampleComponent from "./ExampleComponent";
 
-import "./index.css";
-
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <ExampleComponent />
