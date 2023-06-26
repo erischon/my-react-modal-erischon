@@ -1,6 +1,7 @@
 {
   "name": "my-react-modal-erischon",
-  "version": "0.0.7",
+  "version": "0.0.8",
+  "typ": "module",
   "description": "A React modal component",
   "license": "MIT",
   "author": "Eri Schön",
@@ -19,12 +20,12 @@
     ".": {
       "import": "./dist/my-react-modal-erischon.es.js",
       "require": "./dist/my-react-modal-erischon.umd.js"
-    },
-    "./dist/index.css": "./dist/index.css"
+    }
   },
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build:css": "npx tailwindcss build -i src/index.css -o dist/style.css",
+    "build": "vite build && npm run build:css",
     "test": "vitest run",
     "watch": "vitest",
     "coverage": "vitest run --coverage",
@@ -69,15 +70,15 @@
     "eslint-plugin-react": "^7.32.2",
     "jsdom": "^22.1.0",
     "postcss": "^8.4.24",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
     "react-test-renderer": "^18.2.0",
-    "tailwindcss": "^3.3.2",
     "vite": "^4.3.9",
     "vitest": "^0.32.0"
   },
   "dependencies": {
-    "my-react-modal-erischon": "^0.0.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tailwindcss": "^3.3.2",
+    "my-react-modal-erischon": "link:../my-react-modal-erischon",
     "react-icons": "^4.9.0"
   }
 }
