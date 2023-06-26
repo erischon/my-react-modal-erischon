@@ -2060,6 +2060,14 @@ my-react-modal-erischon@^0.0.4:
   dependencies:
     react-icons "^4.9.0"
 
+my-react-modal-erischon@^0.0.7:
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/my-react-modal-erischon/-/my-react-modal-erischon-0.0.7.tgz#93fae9f7663c1c626e212734a63d7a34586b1b3a"
+  integrity sha512-bXvCFKD5de49sJalalLVEqONdAxrl+WsmwjXa8EnqK/vI5ItsprYW91A/fLe8nzN9uTYyA+M4rV2kn2nouv7+A==
+  dependencies:
+    my-react-modal-erischon "^0.0.4"
+    react-icons "^4.9.0"
+
 mz@^2.7.0:
   version "2.7.0"
   resolved "https://registry.yarnpkg.com/mz/-/mz-2.7.0.tgz#95008057a56cafadc2bc63dde7f9ff6955948e32"

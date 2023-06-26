@@ -19,7 +19,8 @@
     ".": {
       "import": "./dist/my-react-modal-erischon.es.js",
       "require": "./dist/my-react-modal-erischon.umd.js"
-    }
+    },
+    "./dist/index.css": "./dist/index.css"
   },
   "scripts": {
     "dev": "vite",
@@ -28,7 +29,9 @@
     "watch": "vitest",
     "coverage": "vitest run --coverage",
     "link-local": "yarn link && cd node_modules/react && yarn link && cd ../react-dom && yarn link",
-    "unlink-local": "yarn unlink && cd node_modules/react && yarn unlink && cd ../react-dom && yarn unlink"
+    "unlink-local": "yarn unlink && cd node_modules/react && yarn unlink && cd ../react-dom && yarn unlink",
+    "link-local-lib": "yarn link my-react-modal-erischon && yarn link react && yarn unlink react-dom && yarn add link:../my-react-modal-erischon",
+    "unlink-local-lib": "yarn remove my-react-modal-erischon && yarn unlink my-react-modal-erischon && yarn unlink react && yarn unlink react-dom && yarn add my-react-modal-erischon"
   },
   "browserslist": {
     "production": [
@@ -74,7 +77,7 @@
     "vitest": "^0.32.0"
   },
   "dependencies": {
-    "my-react-modal-erischon": "^0.0.4",
+    "my-react-modal-erischon": "^0.0.7",
     "react-icons": "^4.9.0"
   }
 }
