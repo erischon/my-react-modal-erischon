@@ -31,3 +31,5 @@ dist-ssr
 # component build
 /dist
 
+# misc
+*__snapshots__*

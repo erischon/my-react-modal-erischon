@@ -3,7 +3,7 @@ import renderer from "react-test-renderer";
 
 import { describe, expect, it } from "vitest";
 
-import MyModal from "./index";
+import MyModal from "./MyModal";
 
 const modalProps = {
   title: "Modal Title",
