@@ -1,7 +1,7 @@
 import { useState } from "react";
 
-// import MyModal from "./lib";
-import MyModal from "my-react-modal-erischon";
+// import { MyModal } from "./lib";
+import { MyModal } from "my-react-modal-erischon";
 
 function ExampleComponent() {
   const [isModalOpen, setIsModalOpen] = useState(true);

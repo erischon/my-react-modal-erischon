@@ -24,7 +24,7 @@
   },
   "scripts": {
     "dev": "vite",
-    "build:css": "npx tailwindcss build src/lib/style.css -o dist/style.css",
+    "build:css": "npx tailwindcss build -i src/lib/style.css -o dist/style.css",
     "build": "vite build && npm run build:css",
     "test": "vitest run",
     "watch": "vitest",
