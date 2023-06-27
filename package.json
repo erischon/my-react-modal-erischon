@@ -1,6 +1,6 @@
 {
   "name": "my-react-modal-erischon",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "typ": "module",
   "description": "A React modal component",
   "license": "MIT",
@@ -24,8 +24,7 @@
   },
   "scripts": {
     "dev": "vite",
-    "build:css": "npx tailwindcss build -i src/lib/style.css -o dist/style.css",
-    "build": "vite build && npm run build:css",
+    "build": "vite build",
     "test": "vitest run",
     "watch": "vitest",
     "coverage": "vitest run --coverage",
