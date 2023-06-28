@@ -24,7 +24,8 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build:css": "copyup 'src/lib/**/*.css' dist/css",
+    "build": "vite build && npm run build:css",
     "test": "vitest run",
     "watch": "vitest",
     "coverage": "vitest run --coverage",

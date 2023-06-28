@@ -4,6 +4,8 @@ import PropTypes from "prop-types";
 
 import { AiOutlineClose } from "react-icons/ai";
 
+import "./style.css";
+
 MyModal.propTypes = {
   modalProps: PropTypes.shape({
     title: PropTypes.string,
