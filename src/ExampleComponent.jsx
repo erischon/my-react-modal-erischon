@@ -1,7 +1,7 @@
 import { useState } from "react";
 
-import { MyModal } from "./lib";
-// import { MyModal } from "my-react-modal-erischon";
+// import { MyModal } from "./lib";
+import { MyModal } from "my-react-modal-erischon";
 
 function ExampleComponent() {
   const [isModalOpen, setIsModalOpen] = useState(true);
@@ -19,8 +19,8 @@ function ExampleComponent() {
     },
     isOpen: setIsModalOpen,
     ui: {
-      modalBackgroundContainer: "bg-zinc-600",
-      modalBackgroundContainerOpacity: "bg-opacity-100",
+      modalBackgroundContainer: "bg-yellow-600",
+      modalBackgroundContainerOpacity: "bg-opacity-80",
       modalBackground: "bg-zinc-100",
       modalColor: "text-black",
       buttonABackground: "bg-orange-600",

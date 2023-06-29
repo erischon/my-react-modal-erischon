@@ -1,6 +1,6 @@
 {
   "name": "my-react-modal-erischon",
-  "version": "0.0.10",
+  "version": "0.0.12",
   "typ": "module",
   "description": "A React modal component",
   "license": "MIT",
